@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using UI_MVC.Models;
+using UI_MVC.Models.ViewModels;
 
 namespace UI_MVC.Controllers
 {
@@ -11,10 +12,7 @@ namespace UI_MVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
